@@ -41,9 +41,9 @@ img { max-width: 100%; display: block; }
 
 /* ---------- home ---------- */
 .intro { padding: 28px 0 8px; }
-.intro p:first-child::first-letter {
-  font-family: var(--display); font-size: 3.4em; float: left; line-height: .8;
-  padding: 6px 8px 0 0; color: var(--oxblood);
+.intro p {
+  font-family: var(--display); font-style: italic; font-size: 1.6rem; line-height: 1.35;
+  text-align: center; color: var(--ink); margin: 6px auto 0; max-width: 30ch;
 }
 h2.section {
   font-family: var(--display); font-weight: 700; color: var(--oxblood);
@@ -85,6 +85,7 @@ h2.section::after { content: ""; flex: 1; height: 1px; background: var(--rule); 
 
 figure.photo { margin: 18px 0 6px; }
 figure.photo img { width: 100%; aspect-ratio: 3 / 2; object-fit: cover; border: 1px solid var(--rule); filter: sepia(.12); }
+figure.drawing img { aspect-ratio: auto; object-fit: contain; border: 0; filter: none; }
 figure.photo figcaption { font-size: .78rem; color: var(--muted); margin-top: 6px; }
 
 .ledger {
